@@ -21,7 +21,7 @@ public class RahulShettypractice {
 	{
 		// TODO Auto-generated method stub
 		
-		// New Comment Added by Paresh
+		// New Comment Added by Pares
 		// To Add location********************************************************
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
