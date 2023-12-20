@@ -20,6 +20,8 @@ public class RahulShettypractice {
 	public static void main(String[] args) throws IOException 
 	{
 		// TODO Auto-generated method stub
+		
+		// New Comment Added by Paresh
 		// To Add location********************************************************
 		
 		RestAssured.baseURI="https://rahulshettyacademy.com";
