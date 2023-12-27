@@ -77,7 +77,7 @@ public class JiraTest
 		String commentId= js.getString("id");
 		
 
-		//Add Attachmentt
+		//Add Attachment
 
 		given().header("X-Atlassian-Token","no-check").filter(session).pathParam("key", "10101")
 
