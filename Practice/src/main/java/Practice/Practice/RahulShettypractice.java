@@ -16,6 +16,8 @@ import java.nio.file.Paths;
 import Files.Payload;
 
 public class RahulShettypractice {
+	
+	
 
 	public static void main(String[] args) throws IOException 
 	{
@@ -29,12 +31,14 @@ public class RahulShettypractice {
 		//------------------------------------------------------------------------------
 		
 		String response=given().log().all().queryParam("key", "qaclick123")
-		.body(new String(Files.readAllBytes(Paths.get("C:\\Users\\inb252parpat\\Downloads\\Payload.json"))))
+		.body(new String(Files.readAllBytes(Paths.get("C:\\Users\\inb252parpat\\Documents\\Automation\\Payload.json"))))
 		.when().post("/maps/api/place/add/json")
 		.then().assertThat().statusCode(200)
 		.extract().response().asString();
 		
 		System.out.println(response);
+		
+		
 		
 		JsonPath js=new JsonPath(response);
 		String placeId=js.getString("place_id");
